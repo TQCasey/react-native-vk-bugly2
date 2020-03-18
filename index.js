@@ -83,8 +83,8 @@ export default class Bugly {
      *  @param error 错误
      *  @param stack 堆栈
      */
-     static reportError (error,stack) {
-         return RNBugly.reportError && RNBugly.reportError (error,stack);
+     static reportError (etype,error,stack) {
+         return RNBugly.reportError && RNBugly.reportError (etype,error,stack);
      }
 
 };
