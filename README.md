@@ -4,7 +4,7 @@
 
 ## 安装
 
-`yarn add react-native-vk-bugly`
+`yarn add https://github.com/TQCasey/react-native-vk-bugly2.git`
 
 `react-native link react-native-vk-bugly` (autolink 不需要这个)
 
