@@ -60,4 +60,7 @@ Bugly.setUserValue("value", "key");
 // 设置标签
 Bugly.setTag(123);
 
+// 上报自定义错误
+// eType 为错误类型，自定义标记的
+Bugly.reportError (eType,errormsg,stack);
 ```
