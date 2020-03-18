@@ -57,6 +57,6 @@ public class RNBuglyModule extends ReactContextBaseJavaModule {
 
   @ReactMethod
   public void reportError (final String exType, final String error,final String stack) {
-    CrashReport.postException (4, exType, error, stack, null);
+    CrashReport.postException (5, exType, error, stack, null);
   }
 }
