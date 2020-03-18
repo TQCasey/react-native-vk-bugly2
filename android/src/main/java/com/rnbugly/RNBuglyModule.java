@@ -54,4 +54,9 @@ public class RNBuglyModule extends ReactContextBaseJavaModule {
   public void setTag(final Integer tag) {
     CrashReport.setUserSceneTag(getReactApplicationContext(), tag);
   }
+
+  @ReactMethod
+  public void reportError (final String exType, final String error,final String stack) {
+    CrashReport.postException (4, exType, error, stack, null);
+  }
 }

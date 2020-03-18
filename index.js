@@ -76,4 +76,15 @@ export default class Bugly {
     static setTag(tag) {
         return RNBugly.setTag(tag);
     }
+
+
+    /**
+     *  主动上报error 和 stack
+     *  @param error 错误
+     *  @param stack 堆栈
+     */
+     static reportError (error,stack) {
+         return RNBugly.reportError && RNBugly.reportError (error,stack);
+     }
+
 };

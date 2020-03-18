@@ -44,5 +44,10 @@ RCT_EXPORT_METHOD(setTag:(NSUInteger)tag) {
     [Bugly setTag:tag];
 }
 
+/* 主动上报errormsg */
+RCT_EXPORT_METHOD(reportError:(NSString *)exType errmsg:(NSString *)errmsg stack:(NSString *)stack) {
+    [Bugly postException:exType errmsg:errmsg stack:stack];
+}
+
 @end
   
