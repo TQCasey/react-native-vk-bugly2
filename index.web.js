@@ -10,4 +10,4 @@ class Bugly extends Component {
     }
 }
 
-export {Bugly}
+export default Bugly;
