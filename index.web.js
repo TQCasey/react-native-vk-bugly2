@@ -4,32 +4,32 @@ class Bugly {
 
     }
 
-    log (msg) {
+    static log (msg) {
         console.log (msg);
     }
 
-    startWithAppId (buglyAppId,buglyConfig) {
-        this.log ("startWithAppId () is not supported for web");
+    static startWithAppId (buglyAppId,buglyConfig) {
+        Bugly.log ("startWithAppId () is not supported for web");
     }
 
-    setUserIdentifier (id) {
-        this.log ("setUserIdentifier () is not supported for web");
+    static setUserIdentifier (id) {
+        Bugly.log ("setUserIdentifier () is not supported for web");
     }
 
-    updateAppVersion (ver) {
-        this.log ("updateAppVersion () is not supported for web");
+    static updateAppVersion (ver) {
+        Bugly.log ("updateAppVersion () is not supported for web");
     }
 
-    setUserValue (k,v) {
-        this.log ("setUserValue () is not supported for web");
+    static setUserValue (k,v) {
+        Bugly.log ("setUserValue () is not supported for web");
     }
 
-    setTag (tag) {
-        this.log ("setTag () is not supported for web");
+    static setTag (tag) {
+        Bugly.log ("setTag () is not supported for web");
     }
 
-    reportError (etype,error,stack) {
-        this.log ("reportError () is not supported for web");
+    static reportError (etype,error,stack) {
+        Bugly.log ("reportError () is not supported for web");
     }
 }
 
